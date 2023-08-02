@@ -1,0 +1,52 @@
+/* Resetear estilos por defecto del navegador */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+/* Estilos para el enlace de WhatsApp */
+a {
+  position: fixed;
+  bottom: 1.25rem; /* 20px en rem */
+  right: 1.25rem; /* 20px en rem */
+  display: block;
+  width: 10rem; /* Cambia el valor de rem para ajustar el ancho */
+  background-color: #25d366;
+  color: #fff;
+  text-align: center;
+  padding: 0.625rem; /* 10px en rem */
+  border-radius: 0.3125rem; /* 5px en rem */
+  text-decoration: none;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.3); /* 0 2px 5px en rem */
+  z-index: 9999;
+
+  /* Reducir tamaño en un 30% */
+  transform: scale(0.7);
+
+  /* Transiciones para suavizar los cambios */
+  transition: color 0.3s, border 0.3s, transform 1s;
+}
+
+a:hover {
+  /* Cambiar el color del texto al violeta suave */
+  color: #8a3ab9;
+
+  /* Cambiar el estilo del borde al dotted color azul suave */
+  border: 4px dotted #007bff;
+
+  /* Recuperar su tamaño original */
+  transform: scale(1);
+}
